@@ -1,0 +1,47 @@
+/* 그누보드에서 가져온 CSS Clear 파일 */
+/*html {overflow-y:scroll; -webkit-overflow-scrolling: auto;}*/
+/*html, body{height:100%; max-height:100%; overflow-y:hidden;}*/
+body {margin:0;padding:0;font-size:12px;font-family:'Nanum Gothic', sans-serif; -webkit-user-select:none; -webkit-appearance:none; -webkit-touch-callout:none;}
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
+h1, h2, h3, h4, h5, h6 {font-size:1em;font-family:'Nanum Gothic', sans-serif;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+
+#hd ul, nav ul, #ft ul {margin:0;padding:0;list-style:none}
+legend {/*position:absolute;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden*/}
+fieldset{/*border:1px solid #ccc;*/}
+label, input, button, select, img {vertical-align:middle}
+input, button {margin:0;padding:0;font-family:'Nanum Gothic', sans-serif;font-size:1em}
+button {cursor:pointer}
+
+textarea, select {font-family:dotum;font-size:1em}
+select {margin:0}
+p {margin:0;padding:0;word-break:break-all}
+hr {display:none}
+pre {overflow-x:scroll;font-size:1.1em}
+a:link, a:visited {text-decoration:none}
+a:hover, a:focus, a:active {text-decoration:none;}
+*{box-sizing:border-box; -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+#prevent_bar{position:fixed; top:-40px; height:40px; background:#ce2626; width:100%;}
+
+/* 가라미모 헤더 */
+.garamimo_header{height:40px; background:#ce2626; width:100%; position:fixed; line-height:40px; color:#fff; font-size:16px; text-align:center; z-index:9999999;}
+.garamimo_header .header_back{position:absolute; left:0px; top:0px; width:40px; height:40px; cursor:pointer;}
+.garamimo_header .header_title{position:absolute; left:40px; right:40px; top:0px; height:40px;}
+.garamimo_header .header_menu{position:absolute; right:0px; top:0px; width:40px; height:40px; cursor:pointer;}
+
+/* 가라미모 컨텐츠 영역 */
+.garamimo_contents{position:fixed; top:40px; bottom:50px; width:100%; overflow-y:scroll; -webkit-overflow-scrolling:touch; background:#fff;}
+.garamimo_contents.nofooter{bottom:0px; z-index:9999999999999999;}
+.garamimo_contents.noheader{top:0px; z-index:9999999999999999;}
+
+.garamimo_sql_result{padding:13px 10px; border-bottom:1px solid #e5e5e5; background:linear-gradient(#fff,#ececec); cursor:pointer; font-weight:bold;}
+
+.garamimo_sql_result + .garamimo_sql_result_cont{display:none;}
+.garamimo_sql_result.on + .garamimo_sql_result_cont{display:block; background:#eee; padding:10px;}
+
+/* 가라미모 푸터 영역 */
+.garamimo_footer{position:fixed; bottom:0px; left:0px; width:100%; background:#eee; height:50px; border-top:1px solid #e8e8e8; text-align:center; background:#fafafa; z-index:999999999;}
+.footer_icon{display:inline-block; border-left:1px solid #e7e7e7; border-right:1px solid #e7e7e7; height:50px; margin-left:-4px; padding:0px 10px; font-size:12px; color:#c0c0c0; letter-spacing:-0.5px; background:#f7f7f7; min-width:70px; cursor:pointer;}
+.footer_icon.on{color:#ce2626; background:linear-gradient(#e0e0e0,#ececec);}
+.footer_icon i{display:block; font-size:20px; margin-top:4px; margin-bottom:3px;}

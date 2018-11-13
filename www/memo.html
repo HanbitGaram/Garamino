@@ -1,0 +1,24 @@
+<div class="garamimo_page" data-page="memo">
+	<div class="garamimo_header">
+		<div class="header_back"><i class="fas fa-arrow-left"></i></div>
+		<div class="header_title">메모 작성</div>
+<!--		<div class="header_menu"><i class="fas fa-bars"></i></div>-->
+	</div>
+	
+	<style>
+		#garamimo_memo_title, #garamimo_memo_contents{border:0px; -webkit-appearance:none; border-bottom:2px solid #ce2626; border-radius:0px; margin:0px;}
+		#garamimo_memo_title{height:30px; font-size:15px; padding:0px 10px;}
+		#garamimo_memo_contents{padding:5px; font-size:15px;}
+		.garamimo_memo_submit{height:30px; width:100%; background:#ce2626; color:#fff; line-height:30px; text-align:center; font-size:12px;}
+	</style>
+
+	<div class="garamimo_contents">
+		<div style="margin-top:10px; padding:0px 10px;">
+			<input type="text" id="garamimo_memo_title" placeholder="제목을 입력해주세요." style="width:100%;">
+		</div>
+		<div style="margin-top:10px; padding:0px 10px;">
+			<textarea id="garamimo_memo_contents" placeholder="내용을 입력해주세요." style="min-height:300px; width:100%;"></textarea>
+		</div>
+		<div class="garamimo_memo_submit" onclick="if(confirm('작성할겁니까?')){memo_write();}">메모작성</div>
+	</div>
+</div>
