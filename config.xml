@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="jp.hanb.garamimo" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>가라미모</name>
+    <description>
+    	간편히 사용할 수 있는 메모 앱입니다. (포트폴리오를 위해 제작하였습니다.)
+    </description>
+    <author email="webmaster@hanb.jp" href="http://hanb.jp">
+        한빛가람(이서현)
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="StatusBarOverlaysWebView" value="false" />
+        <preference name="StatusBarBackgroundColor" value="#ce2626" />
+        <preference name="StatusBarDefaultScrollToTop" value="true" />
+        <preference name="StatusBarStyle" value="blacktranslucent" />
+    </platform>
+    <preference name="DisallowOverscroll" value="true" />
+    <plugin name="cordova-sqlite-storage" spec="^2.5.1" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
+    <engine name="ios" spec="^4.5.5" />
+    <engine name="browser" spec="^5.0.4" />
+    <engine name="android" spec="^7.1.2" />
+</widget>
